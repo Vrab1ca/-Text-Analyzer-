@@ -17,6 +17,13 @@ namespace Text_Analyzer
             "че" , "не" , "той" , "които" , "със" , "тя" , "те" , "го" , "му" , "ги" ,
              "си" , "тази" , "тук" , "там" , "също" , "са" , "сме" , "сте" , "само" , "още" ,
              "може" , "би" , "е" };
+
+          int wordCount = CountWords(inputText);
+          int charCount = CountCharacters(inputText);
+          var wordFrequency = GetWordFrequency(inputText , stopWords);
+
+          Console.WriteLine($"\nСтатистика : ");
+          Console.Write
         }
     }
 }
