@@ -8,7 +8,15 @@ namespace Text_Analyzer
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine("╔══════════════════════════════════════╗");
+            Console.WriteLine("(っ◔◡◔)っ ♥ Въведете текст за анализ ♥");
+            Console.WriteLine("╚══════════════════════════════════════╝");
+            string inputText = Console.ReadLine();
+            HashSet<string> stopWords = new Hashet<string> 
+            { "и" , "на" , "в" , "с" , "за" , "да" , "от" , "се" , "като" , "по" ,
+            "че" , "не" , "той" , "които" , "със" , "тя" , "те" , "го" , "му" , "ги" ,
+             "си" , "тази" , "тук" , "там" , "също" , "са" , "сме" , "сте" , "само" , "още" ,
+             "може" , "би" , "е" };
         }
     }
 }
