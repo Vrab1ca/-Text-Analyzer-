@@ -33,7 +33,7 @@ namespace Text_Analyzer
             string tense = DetectTense(inputText);
 
 
-            Console.WriteLine($"\n▷Статистика:");
+          
             Console.WriteLine($"▒Брой думи▒: {wordCount}");
             Console.WriteLine($"▙Брой символи▜: {charCount}");
             Console.WriteLine($"▬Брой изречения▬: {sentenceStats.SentenceCount}");
