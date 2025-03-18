@@ -16,16 +16,16 @@ namespace Text_Analyzer
             {
                 // Display the input prompt with the exit button in a box
                 Console.WriteLine("╔═════════════════════════════════════╗");
-                Console.WriteLine("Въведете текст (или 'Ext' за изход): ");
+                Console.WriteLine("Въведете текст (или 'exT' за изход): ");
                 Console.WriteLine("╚═════════════════════════════════════╝");
 
                 string inputText = Console.ReadLine();
 
                 // Check if the user wants to exit
-                if (inputText.Trim().Equals("Ext", StringComparison.OrdinalIgnoreCase))
+                if (inputText.Trim().Equals("ext", StringComparison.OrdinalIgnoreCase))
                 {
                     Console.WriteLine("Излизане от програмата...");
-                    break; // Exit the loop and end the program
+                    break;
                 }
 
                 // Common Bulgarian stop words to ignore
