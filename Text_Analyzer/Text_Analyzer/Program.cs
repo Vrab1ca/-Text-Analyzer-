@@ -15,9 +15,9 @@ namespace Text_Analyzer
             while (true) // Loop to keep the program running until the user exits
             {
                 // Display the input prompt with the exit button in a box
-                Console.WriteLine("╔═════════════════════════════════════════════════════╗");
-                Console.WriteLine("(◔◡◔)✍ Въведете текст (или 'Ext' за изход): ☜(ˆ▿ˆc) ");
-                Console.WriteLine("╚═════════════════════════════════════════════════════╝");
+                Console.WriteLine("╔═════════════════════════════════════╗");
+                Console.WriteLine("Въведете текст (или 'Ext' за изход): ");
+                Console.WriteLine("╚═════════════════════════════════════╝");
 
                 string inputText = Console.ReadLine();
 
@@ -80,10 +80,12 @@ namespace Text_Analyzer
             return words.Length;
         }
 
-        // Count the total number of characters (excluding spaces)
+        // Count the total number of characters (excluding spaces and punctuation)
         static int CountCharacters(string text)
         {
-            return text.Replace(" ", "").Length;
+            // Remove spaces and punctuation marks
+            string cleanedText = new string(text.Where(c => !char.IsPunctuation(c) && !char.IsWhiteSpace(c)).ToArray());
+            return cleanedText.Length;
         }
 
         // Get the frequency of each word, ignoring stop words
