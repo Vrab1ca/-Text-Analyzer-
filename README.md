@@ -32,7 +32,7 @@ Framework: .NET 8.0,
 System; System.Collections.Generic; System.Linq; System.Text.RegularExpressions; System.Text;
 
 Помощници при разработката на програмата:
-ChatGPT, DeepSeek, Gemini, Google и различни форуми за програмиране.
+ChatGPT, DeepSeek, Gemini, Google и различни форуми за програмиране и програмисти.
 
 Забележки:
 Програмата не изчислява някои елементи напълно коректно.
